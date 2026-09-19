@@ -15,6 +15,7 @@ body {
   font-family: 'Courier New', monospace;
   background-color: #212121;
 }
+
 main {
   padding: 2rem;
   display: flex;
@@ -22,35 +23,6 @@ main {
   gap: 2rem;
   margin: 1rem;
   padding: 1rem;
-}
-
-aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  border: 2px dotted darkred;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  margin-bottom: 5rem;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10rem;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 h1 {
@@ -87,6 +59,64 @@ p {
     padding: 1rem;
     margin: 1rem;
   }
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 2px dotted darkred;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer a {
+  font-size: clamp(0.7rem, 3vw, 1.25rem);
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+footer small {
+  font-size: inherit;
+}
+.footer-con {
+  display: flex;
+  position: relative;
+}
+
+#q-1, #q-2{
+  position: absolute;
+  width: clamp(40px, 8vw, 50px);
+  height: auto;
+}
+
+#q-1 {
+  top: -1rem;
+  left: -3rem;
+}
+#q-2 {
+  top: -1rem;
+  right: -3rem;
 }
 
 .header-con {
@@ -126,7 +156,15 @@ header, h1 {
   }
 
  .header-con img {
-    height: 2rem;   /* em of the header's 40px font, so it tracks the title */
-    width: auto;     /* overrides the desktop clamp() width */
+   height: 2rem;
+   width: auto;
+ }
+  #q-1 {
+    top: -1rem;
+    left: 0rem;
+  }
+  #q-2 {
+    top: -1rem;
+    right: 0rem;
   }
 }
