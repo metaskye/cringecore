@@ -168,4 +168,14 @@ header, h1 {
     top: -1rem;
     right: 0rem;
   }
+
+  aside {
+    gap: unset;
+  }
+
+  .menu {
+    a {
+      margin: unset;
+    }
+  }
 }
