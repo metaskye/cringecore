@@ -1,0 +1,33 @@
+.manifest {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 2px dotted darkred;
+  padding: 4rem;
+}
+
+#ds-1, #ds-2, #ds-3, #ds-4 {
+  position: absolute;
+  width: clamp(40px, 8vw, 50px);
+  height: auto;
+}
+
+#ds-1 {
+  top: -1rem;
+  left: -1rem;
+}
+#ds-2 {
+  top: -1rem;
+  right: -1rem;
+}
+#ds-3 {
+  bottom: -1rem;
+  right: -1rem;
+}
+#ds-4 {
+  bottom: -1rem;
+  left: -1rem;
+}
