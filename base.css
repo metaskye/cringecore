@@ -107,7 +107,7 @@ footer small {
 
 #q-1, #q-2{
   position: absolute;
-  width: clamp(40px, 8vw, 50px);
+  width: clamp(25px, 7vw, 50px);
   height: auto;
 }
 
@@ -126,7 +126,7 @@ footer small {
   justify-content: center;
   img {
     height: auto;
-    width: clamp(60px, 15vw, 200px);
+    width: clamp(60px, 15vw, 150px);
     flex-shrink: 0;
   }
 }
